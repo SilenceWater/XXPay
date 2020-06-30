@@ -1,0 +1,1 @@
+../../../../../XXPay/Classes/UI/View/XXPayCheckoutCounterHeaderView.h

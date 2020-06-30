@@ -3,22 +3,24 @@
 Pod::Spec.new do |s|
   s.name             = 'XXPay'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XXPay.'
+  s.summary          = '聚合支付 -> (微信、支付宝、银联)'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'http://git.zhcs.com/iOS_Group/XXPay'
+  s.homepage         = 'https://github.com/SilenceWater/XXPay'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Monster .' => 'wwwarehouse@163.com' }
-  s.source           = { :git => 'http://git.zhcs.com/iOS_Group/XXPay.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SilenceWater/XXPay.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'XXPay/Classes/**/*'
+  s.static_framework = true
+  s.vendored_libraries = 'XXPay/Classes/**/*.a'
   
   # s.resource_bundles = {
   #   'XXPay' => ['XXPay/Assets/*.png']
@@ -31,6 +33,9 @@ TODO: Add long description of the pod here.
 
  s.dependency 'Masonry'
  s.dependency 'XXNetwork'
+ 
+ s.dependency 'AlipaySDK-iOS'
+ s.dependency 'WechatOpenSDK' ,'1.8.5'
  
  #s.dependency 'DYSuperKit'
  #s.dependency 'DYFoundation'

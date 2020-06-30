@@ -1,0 +1,1 @@
+../../../../../XXPay/Classes/Core/ChildService/XXPayWXService.h

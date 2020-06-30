@@ -3,7 +3,7 @@
 #source 'https://github.com/CocoaPods/Specs.git'
 #source 'http://git.zhcs.com/iOS_Group/DYSpecs.git'
 
-use_frameworks!
+#use_frameworks!
 
 platform :ios, '10.0'
 

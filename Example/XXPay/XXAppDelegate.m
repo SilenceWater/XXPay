@@ -9,12 +9,16 @@
 #import "XXAppDelegate.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import "XXViewController.h"
+#import <XXPay/XXPay.h>
 
 @implementation XXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //配置类
+    [XXPayment xx_registerApp:@"你注册微信获取的id" payType:XXPaymentTypeWXPay];
     
     IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
     manager.shouldResignOnTouchOutside = YES;
@@ -27,6 +31,10 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+    return [XXPayment xx_handleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

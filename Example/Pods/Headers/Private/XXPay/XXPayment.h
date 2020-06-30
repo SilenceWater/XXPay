@@ -1,0 +1,1 @@
+../../../../../XXPay/Classes/Core/XXPayment.h

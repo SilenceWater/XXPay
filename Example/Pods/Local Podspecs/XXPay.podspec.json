@@ -1,0 +1,38 @@
+{
+  "name": "XXPay",
+  "version": "0.1.0",
+  "summary": "A short description of XXPay.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://git.zhcs.com/iOS_Group/XXPay",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Monster .": "wwwarehouse@163.com"
+  },
+  "source": {
+    "git": "http://git.zhcs.com/iOS_Group/XXPay.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "XXPay/Classes/**/*",
+  "static_framework": true,
+  "vendored_libraries": "XXPay/Classes/**/*.a",
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "XXNetwork": [
+
+    ],
+    "AlipaySDK-iOS": [
+
+    ],
+    "WechatOpenSDK": [
+      "1.8.5"
+    ]
+  }
+}

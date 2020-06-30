@@ -1,0 +1,1 @@
+../../../../../XXPay/Classes/Protocol/XXPayOrderPaprameterProtocol.h

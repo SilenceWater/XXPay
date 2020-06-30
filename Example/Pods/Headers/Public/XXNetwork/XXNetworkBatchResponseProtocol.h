@@ -1,0 +1,1 @@
+../../../XXNetwork/XXNetwork/Classes/XXNetworkProtocol/XXNetworkBatchResponseProtocol.h
